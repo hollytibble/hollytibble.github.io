@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Code+Pro" rel="stylesheet">
+  <style>
+
+  .content {
+    font-family: "Source Code Pro", monospace;
+    max-width: 700px;
+    margin: auto;
+    padding: 10px;
+    color: #fdf6e3;
+  }
+
+  ul {
+  list-style-type: "→";
+  }
+
+  .img{
+    float: right;
+  }
+
+  .navbar {
+    margin-bottom:40px;
+    padding-right: 10px;
+    padding-left: auto;
+  }
+
+  .header {
+    display:flex;
+    overflow: auto;
+    align-items: center;
+  }
+
+
+  li {
+    list-style: none;
+     margin-bottom:10px;
+  }
+
+  li::before {
+    content:"\003E\0020";
+  }
+
+  /* unvisited link */
+  a:link {
+    color: #6c71c4;
+    text-decoration: none;
+  }
+
+  /* visited link */
+  a:visited {
+    color: #6c71c4;
+    text-decoration: none;
+  }
+
+  /* mouse over link */
+  a:hover {
+    color: grey;
+  }
+
+  /* selected link */
+  a:active {
+    color: #6c71c4;
+    text-decoration: none;
+  }
+
+  </style>
+
+<title>Holly Tibble</title>
+</head>
+<body style="background-color:#012B36;">
+
+
+  <div class="content">
+
+
+    <div class="header">
+      <h1 style="color:#268bd2; font-size:80px; font-weight:800;">Holly Tibble</h1>
+    </div>
+
+    <div class="main">
+      <div class="about">
+        <h2 style="color:#2aa198; font-weight: bold;" > about </h2>
+        <p>
+          BIO
+         </p>
+
+         <p>
+           My primary research interests:
+           <ul>
+             <li> A
+             <li> B
+             <li>C
+           </ul>
+         </p>
+
+         <p>
+          PERSONAL
+         </p>
+      </div>
+
+      <div class="papers">
+        <h2 style="color:#2aa198; font-weight: bold;"> papers </h2>
+        <ul>
+        <li><a class="pubtitle" href="https://asplos-conference.org/abstracts/asplos21-paper969-extended_abstract.pdf">TITLE</a>, <span class="pubmetadata"><span class="pubauthors">AUTHORS. </span> <span class="pubvenue"><i>CITATION, YEAR.</i></span></span></span></li>
+        </ul>
+      </div>
+    </div>
+
+
+
+  </div>
+</body>
+</html>

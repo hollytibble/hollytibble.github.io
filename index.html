@@ -1,107 +1,172 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
 <html>
-<body>
-  
+
 <head>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Code+Pro" rel="stylesheet">
-  
-  <style>
-  .content {
-    font-family: "Source Code Pro", monospace;
-    max-width: 700px;
-    margin: auto;
-    padding: 10px;
-    color: #fdf6e3;
+  <title>Holly Tibble</title>
+
+  <meta charset="utf-8" />
+
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/resources/jt.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <style type="text/css">
+    body {
+      font-family: 'DM Sans', sans-serif !important;
     }
-    
-    ul {
-      list-style-type: "→";
+
+
+    a:link,
+    a:hover,
+    a:visited,
+    a:active {
+      color: #306BAC !important;
     }
-    
-    .img{
-      float: right;
+
+    .nodecor:link,
+    .nodecor:hover,
+    .nodecor:visited,
+    .nodecor:active {
+      color: #333 !important;
+      text-decoration: none;
     }
-    
-      .navbar {
-    margin-bottom:40px;
-    padding-right: 10px;
-    padding-left: auto;
-  }
 
-  .header {
-    display:flex;
-    overflow: auto;
-    align-items: center;
-  }
+    .boldtext {
+      font-weight: 700 !important;
+    }
+
+    .semiboldtext {
+      font-weight: 500 !important;
+    }
+
+    .smalltext {
+      font-size: .8em;
+    }
+
+    #name {
+      font-size: 3.6em;
+      line-height: 1em;
+      margin-top: .5em;
+      margin-bottom: .2em;
+    }
+
+    #title {
+      font-size: 1.2em;
+    }
+
+    #email {
+      font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+      font-size: .9em;
+      margin-top: 2px;
+      margin-bottom: 2px;
+    }
+
+    #picpad {
+      margin-top: .5em;
+      margin-bottom: .5em;
+    }
+
+    #overview {
+      font-size: 1.2em;
+    }
+
+    #projects {
+      font-size: 1.1em;
+    }
+
+    #projects li {
+      margin-top: .5em;
+    }
+
+    @media only screen and (max-width: 750px) {
+      #fadeshow1 {
+        display: none;
+      }
+    }
+
+    .content {
+      margin: auto;
+      max-width: 800px;
+      padding: 10px;
+    }
+
+    .subcontent {
+      margin-top: 1em;
+      margin-bottom: 1.5em;
+    }
+
+    .pubtitle {
+      font-weight: 500;
+    }
 
 
-  li {
-    list-style: none;
-     margin-bottom:10px;
-  }
+    .pubyear {
+      margin-top: 12px;
+      clear: both;
+      font-size: 1.2em;
+      color: 222;
+    }
 
-  li::before {
-    content:"\003E\0020";
-  }
+    .pubaward {
+      font-weight: 600;
+      font-style: italic;
+    }
 
-  /* unvisited link */
-  a:link {
-    color: #6c71c4;
-    text-decoration: none;
-  }
+    /* Add a card effect for articles */
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+    }
 
-  /* visited link */
-  a:visited {
-    color: #6c71c4;
-    text-decoration: none;
-  }
+    .authlist {
+      font-size: 12px;
+      color: gray;
+    }
 
-  /* mouse over link */
-  a:hover {
-    color: grey;
-  }
+    .title {
+      font-size: 18px;
+      font-weight: bold;
+    }
 
-  /* selected link */
-  a:active {
-    color: #6c71c4;
-    text-decoration: none;
-  }
+    .date {
+      font-size: 12px;
+    }
+
+    .abstract {
+      font-size: 14px;
+    }
   </style>
-<title>Holly Tibble</title>
 </head>
-  
-<body style="background-color:#012B36;">
-  <div class="content">
-    <div class="header">
-      <h1 style="color:#268bd2; font-size:80px; font-weight:800;">Holly M Tibble</h1>
-    </div>
-  </div>
-  
-  <div class="about">
-        <h2 style="color:#2aa198; font-weight: bold;" > about </h2>
-        <p>
-          I am a Research Fellow at the University of Edinburgh's Usher Instite.
-         </p>
 
-         <p>
-           My primary research interests include:
-           <ul>
-             <li> Machine Learning Classification Models for Medical Prognostic Modelling
-             <li> Data Extraction from Electronic Health Records
-             <li> Estimating Medication Adherence from Primary Care Prescription Records
-           </ul>
-         </p>
+<body>
+
+  <div class="content" style="margin-top: 5.5rem;">
+
+    <div class="row">
+      <div class="col-sm-offset-5 col-sm-8">
+        <div id="name">
+          <div class="semiboldtext">Holly M Tibble</div>
+        </div>
+        <div id="title" style="margin-top: 1.5rem;">
+
+          <div style="margin-top: 1rem;"></div>
+          <div id="email">holly.tibble@ed.ac.uk</div>
+
+          <div style="font-size: 1em;"><a href="Resources/CV.pdf">cv</a> · <a
+              href="https://github.com/hollytibble">github</a> · <a
+              href="https://scholar.google.co.uk/citations?user=Sq55BsEAAAAJ&hl=en">scholar</a></div>
+
+        </div>
       </div>
-    
-    <div class="papers">
-        <h2 style="color:#2aa198; font-weight: bold;"> papers </h2>
-        <ul>
-        <li><a class="pubtitle" href="https://arxiv.org/abs/1809.07196">TITLE</a>, <span class="pubmetadata"><span class="pubauthors">AUTHORS.</span> <span class="pubvenue"><i>CITATION, YEAR.</i></span></span></span></li>
-        </ul>
+
+      <div class="col-sm-4">
+        <img class="float-right" src="Resources/IMG_0657.JPG" id="fadeshow1" alt="pdb" id="pdb-pic"
+          style="height: 220px; margin-top: 10px;">
       </div>
-  
+
+    </div>
 </body>
+
 </html>
